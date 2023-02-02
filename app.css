@@ -1,0 +1,155 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --font-family: 'Karla', sans-serif;
+}
+
+body{
+    background-color: var(--light-gray);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whole-card{
+    width: 640px;
+    height: 475px;
+    border-radius: 10px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 30px var(--grayish-blue);
+}
+
+.header-section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.title{
+    color: var(--cyan);
+    font-size: 25px;
+    margin: 0;
+}
+
+.second-title{
+    color: var(--bright-yellow);
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.header-description{
+    color: var(--grayish-blue);
+    font-size: 16px;
+}
+
+.sub-why-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.subscription-section{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cyan);
+    color: white;
+    padding: 40px;
+    width: 320px;
+    border-bottom-left-radius: 10px;
+}
+
+.subscription-title{
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.amount-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.num-dollars{
+    font-size: 30px;
+    margin: 0;
+}
+
+.amt-per-month{
+    color: var(--light-gray);
+    font-size: 15px;
+    margin: 10px;
+}
+
+.subscription-descrip{
+    font-size: 15px;
+    color: var(--light-gray);
+}
+
+.subscription-btn{
+    background-color: var(--bright-yellow);
+    color: white;
+    font-family: var(--font-family);
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.why-section{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 60%, 50%);
+    color: white;
+    padding: 40px;
+    width: 320px;
+    border-bottom-right-radius: 10px;
+}
+
+.why-title{
+    margin: 0;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.why-list{
+    margin: 0;
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    color: var(--light-gray);
+    line-height: 20px;
+}
+
+@media screen and (max-width: 375px){
+    .whole-card{
+        display: flex;
+        flex-direction: column;
+        width: 325px;
+        height: 777px;
+    }
+
+    .sub-why-section{
+        flex-direction: column;
+    }
+
+    .subscription-section{
+        width: 265px;
+        padding: 30px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .why-section{
+        width: 265px;
+        padding: 30px;
+        border-bottom-left-radius: 10px;
+    }
+}
